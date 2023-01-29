@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    This post title
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-details.css" %}"/>
+{% endblock %}
+
+{% block content %}
+    <section id="summary">
+        <h2>
+            Post title
+        </h2>
+        <article>
+            <img src="{% static "blog/images/mountains.jpg" %}" alt="Post title"/>
+            <address>By Jakub</address>
+            <div>
+                Last updated on <time>June 11th</time>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Possimus corporis, similique ab, laboriosam neque officia ut,
+            labore repellat eveniet voluptates expedita amet nihil quidem iure non.
+            Quo tenetur saepe pariatur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Possimus corporis, similique ab, laboriosam neque officia ut,
+            labore repellat eveniet voluptates expedita amet nihil quidem iure non.
+            Quo tenetur saepe pariatur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Possimus corporis, similique ab, laboriosam neque officia ut,
+            labore repellat eveniet voluptates expedita amet nihil quidem iure non.
+            Quo tenetur saepe pariatur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Possimus corporis, similique ab, laboriosam neque officia ut,
+            labore repellat eveniet voluptates expedita amet nihil quidem iure non.
+            Quo tenetur saepe pariatur.
+        </p>
+    </main>
+{% endblock %}
