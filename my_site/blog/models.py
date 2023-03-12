@@ -7,10 +7,10 @@ class Author(models.Model):
     email = models.EmailField(max_length=100)
     
 class Tag(models.Model):
-    caption = models.CharField()
+    caption = models.CharField(max_length=20)
     
 class Post(models.Model):
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    author = models.ForeignKey(Author, on_delete=models.SET_NULL, related_name="posts")
     tag = models.ManyToManyField(Tag)
     title = models.CharField(max_length=100)
     excerpt = models.CharField(max_length=250)
