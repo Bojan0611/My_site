@@ -29,7 +29,3 @@ class Post(models.Model):
     slug = models.SlugField(unique=True, db_index=True)
     content = models.TextField(validators=[MinLengthValidator(10)])
     
-    prepopulated_field = {
-        "slug": ("title",)
-    }
-    
